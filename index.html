@@ -23,19 +23,19 @@
               <div class="form-group">
                 <div class="input-group">
                   <span class="input-group-text"><i class="icon-user">$</i></span>
-                  <input type="number" id="amount" class="form-control" placeholder="Loan Amount">
+                  <input type="number" min="1" id="amount" class="form-control" placeholder="Loan Amount">
                 </div>
               </div>
               
               <div class="form-group">
                 <div class="input-group">
                   <span class="input-group-text"><i class="icon-user">%</i></span>
-                  <input type="number" id="interest" class="form-control" placeholder="Interest">
+                  <input type="number" min="0.1" id="interest" class="form-control" placeholder="Interest">
                 </div>
               </div>
               
               <div class="form-group">
-                <input type="number" id="years" class="form-control" placeholder="Years To Repay">
+                <input type="number" min="1" id="years" class="form-control" placeholder="Years To Repay">
               </div>
               
               <div class="form-group">
@@ -43,10 +43,11 @@
               </div>
 
             </form>
-            <!-- LOADER -->
+
             <div id="loading" style="display: none">
               <img src="img/loading.gif" alt="loading...">
             </div>
+            
             <div id="results" class="pt-2" style="display: none;">
               <h5>Results</h5>
               
